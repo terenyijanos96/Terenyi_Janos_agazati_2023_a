@@ -15,4 +15,4 @@ def szam_oszathato_e_harommal_vagy_ottel(szam):
     else:
         kimenet = "A szám egyikkel sem osztható..."
 
-    print(f"I/A:\n\t{kimenet}")
+    print(f"I/B:\n\t{kimenet}")

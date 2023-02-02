@@ -25,10 +25,14 @@ def gombak_szama(gomba_lista):
 
 def papsapka(gomba_lista):
     i = 0
-    while (not gomba_lista[i].nemzettseg == "papsapkagombák") and i < len(gomba_lista):
+    while i < len(gomba_lista) and (not gomba_lista[i].nemzettseg == "papsapkagombák"):
         i += 1
 
-    print(f"III/C:\n\tAz első papsapkagomba neve: {gomba_lista[i].gomba_neve}")
+    if i < len(gomba_lista):
+        print(f"III/C:\n\tAz első papsapkagomba neve: {gomba_lista[i].gomba_neve}")
+    else:
+        print(f"III/C:\n\tAz első papsapkagomba neve: Nincsen a listában papsapkagomba...")
+
 
 def tinoru(gomba_lista):
     i = 0
